@@ -7,7 +7,7 @@ Additionally the `FrameCounter` can also be used to cap the framerate at a certa
 # Examples:
 
 Counting the framerate:
-```
+```no_run
 use frame_counter::FrameCounter;
 
 pub fn dummy_workload() {
@@ -141,7 +141,7 @@ impl<'a> Frame<'a> {
     ///
     /// # Example:
     ///
-    /// ```
+    /// ```no_run
     /// use frame_counter::FrameCounter;
     ///
     /// pub fn dummy_workload() {
@@ -175,7 +175,7 @@ impl<'a> Frame<'a> {
     ///
     /// # Example:
     ///
-    /// ```
+    /// ```no_run
     /// use frame_counter::FrameCounter;
     ///
     /// pub fn dummy_workload() {
