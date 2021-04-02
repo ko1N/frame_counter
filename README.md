@@ -22,11 +22,9 @@ pub fn main() {
     let mut frame_counter = FrameCounter::default();
 
     loop {
-        {
-            let frame = frame_counter.start_frame();
+        frame_counter.tick();
 
-            dummy_workload();
-        }
+        dummy_workload();
 
         println!("fps stats - {}", frame_counter);
     }

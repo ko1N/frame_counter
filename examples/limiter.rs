@@ -8,14 +8,12 @@ pub fn main() {
     let mut frame_counter = FrameCounter::default();
 
     loop {
-        {
-            let frame = frame_counter.start_frame();
+        frame_counter.tick();
 
-            dummy_workload();
+        dummy_workload();
 
-            // hot loop, do not trigger scheduler
-            frame.sleep_until_framerate(60f64);
-        }
+        // hot loop, do not trigger scheduler
+        frame_counter.sleep_until_framerate(60f64);
 
         println!("fps stats - {}", frame_counter);
     }
