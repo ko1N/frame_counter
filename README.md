@@ -1,5 +1,6 @@
 # frame_counter
 [![Crates.io](https://img.shields.io/crates/v/frame_counter.svg)](https://crates.io/crates/frame_counter)
+[![Docs.rs](https://img.shields.io/badge/documentation-docs.rs-df3600.svg?style=flat-square)](https://docs.rs/frame_counter)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 The frame_counter library provides a very simple to use framerate counter
