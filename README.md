@@ -11,7 +11,7 @@ Additionally the `FrameCounter` can also be used to cap the framerate at a certa
 # Examples:
 
 Counting the framerate:
-```
+```rust
 use frame_counter::FrameCounter;
 
 pub fn dummy_workload() {
