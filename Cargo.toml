@@ -1,6 +1,6 @@
 [package]
 name = "frame_counter"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["ko1N <ko1N1337@gmail.com>"]
 edition = "2018"
 description = "simple frame counter and limiter"
