@@ -1,11 +1,11 @@
-use frame_counter::FrameCounter;
+use frame_counter::{FrameCounter, StdTimer};
 
 pub fn dummy_workload() {
     std::thread::sleep(std::time::Duration::from_millis(1));
 }
 
 pub fn main() {
-    let mut frame_counter = FrameCounter::default();
+    let mut frame_counter = FrameCounter::<StdTimer>::default();
 
     loop {
         frame_counter.tick();
