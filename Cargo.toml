@@ -9,6 +9,10 @@ readme = "README.md"
 repository = "https://github.com/ko1N/frame_counter"
 license-file = "LICENSE"
 
+[dependencies]
+quanta = { version = "0.12", optional = true }
+minstant = { version = "0.1", optional = true }
+
 [[example]]
 name = "counter"
 path = "examples/counter.rs"
@@ -16,3 +20,6 @@ path = "examples/counter.rs"
 [[example]]
 name = "limiter"
 path = "examples/limiter.rs"
+
+[features]
+default = []
